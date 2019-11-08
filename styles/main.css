@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=nunito|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cormorant:600');
+
+ul { 
+    list-style: none;
+}
+
+a { 
+    text-decoration: none; 
+    color: black;
+    font-family: "nunito";
+    font-weight: bold;
+}
+
+.wrapper{
+  padding:1em;
+}
+
+h1{
+  transition: all 0.4s ease;
+}
+
+.wrapper:hover h1{
+  transition: all 0.4s ease;
+  transform: scaleY(-1);
+}
+
+a:hover {
+    color: #9b0043;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.greet {
+    animation: 6s ease-out 1s;
+
+}
+
+#logo {
+    width: 30px;
+    float: right;
+    margin: 18px;
+}
+
+#menu-wrapper {
+    overflow: hidden;
+    cursor: pointer;
+    width: 38px;
+}
+
+#menu-wrapper #hamburger-menu {
+    position: relative;
+    width: 20px;
+    height: 18px;
+    margin: 20px;
+}
+
+#menu-wrapper #hamburger-menu span {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1.6px;
+    margin-top: 3px;
+    border-radius: 1px;
+    background-color: black;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+#menu-wrapper #hamburger-menu span:nth-child(1) {
+    top: 0;
+}
+#menu-wrapper #hamburger-menu span:nth-child(2) {
+    top: 5px;
+    background-color: rgba(147, 206, 226,1);
+}
+#menu-wrapper #hamburger-menu span:nth-child(3) {
+    top: 10px;
+}
+
+#menu-wrapper #hamburger-menu.open span:nth-child(1) {
+    top: 7px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#menu-wrapper #hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+#menu-wrapper #hamburger-menu.open span:nth-child(3) {
+    top: 7px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#menu-container .menu-list .menu-submenu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*.menu-submenu > li:hover {
+    text-decoration: underline;
+}*/
+
+ .menu-list {
+    padding-left: 0;
+    display: block;
+    position: absolute;
+    width: 20%;
+    max-width: 450px;
+    background-color: rgba(136, 194, 206, 1);
+    box-shadow: rgba(100,100,100,0.3) 6px 6px 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: -100%;
+    margin: 0px;
+    mix-blend-mode: hard-light;
+}
+
+#menu-container .menu-list li.accordion-toggle, #menu-container .menu-list .menu-login, .toggle {
+    font-size: 16px;
+    padding: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid #dbdcd2;
+}
+
+#menu-container .menu-list li:first-of-type {
+    border-top: 0;
+}
+
+.accordion-toggle, .accordion-content {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-toggle a:before, .accordion-toggle a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-out;
+}
+
+.accordion-toggle a:before {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 1;
+}
+
+.accordion-toggle.active-tab {
+  background-color: #606060;
+  transition: all 0.3s ease;
+}
+
+.accordion-toggle a.active:before {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background: #fff !important;
+}
+
+.accordion-toggle a.active:after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: #fff !important;
+    opacity: 0;
+}
+
+main {
+    display: grid;
+    height: 750px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    "articleone articleone"
+    "articletwo  articlethree";
+}
+
+#article1 {
+    background-image: url("elvira.jpg");
+/*    background-blend-mode: screen;*/
+    grid-area: articleone;
+    padding-top: 0px;
+    background-size: 700px;
+    background-position: 80px;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#article1 p {
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 600px;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#article1 h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 260px;
+    margin-left: 700px;
+    /*border: solid black 1px;*/
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 10px 0px 25px 25px;
+    letter-spacing: 2px;
+    /*background-color: rgb(255, 169, 130);*/
+}
+
+#article2 {
+    grid-area: articletwo;
+    height: 100px;
+}
+
+#article3 {
+    grid-area: articlethree;
+}
+
+article {
+    background-color: white;
+    padding: 10px 0px 15px 0px;
+    margin: 0;
+}
+
+h1 {
+    margin: 10px;
+    font-family: 'Cormorant', sans-serif;
+    font-size: 55px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 40%;
+    color: white;
+    padding: 10px;
+    background-color: rgb(147, 206, 226);
+    font-family: 'Cormorant', sans-serif;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+
+p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 300px;
+    width: 50%;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    padding: 10px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px 0px 0px 0px;
+}
+
+footer p {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#definition {
+    font-size: 12px !important;
+    font-family: georgia;
+    font-style: italic;
+}

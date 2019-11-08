@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio Project G</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+		<a href="index.html"><img src="styles/logo.png" id="logo"></a>
+			<div id="menu-container">
+		  		<div id="menu-wrapper">
+		      		<div id="hamburger-menu"><span></span><span></span><span></span></div><span></span>
+		    <!-- hamburger-menu -->
+		   		</div>
+
+		   	<!-- menu-wrapper -->
+		   		<ul class="menu-list accordion">
+		   			<li id="nav0" class="toggle"> 
+				         <a class="menu-link" href="index.html">Home</a>
+				    </li>
+		      		<li id="nav1" class="toggle accordion-toggle"> 
+		         		<span class="icon-plus"></span>
+		         		<a class="menu-link" href="#">Topics</a>
+		      		</li>
+		    <!-- menu-submenu accordon-content-->
+			      	<ul class="menu-submenu accordion-content">
+				        <li><a class="head" href="wearables.html">Wearables</a></li>
+				        <li><a class="head" href="playfulinteractions.html">Playful Interactions</a></li>
+				        <li><a class="head" href="artificialcreatures.html">Artificial Creatures</a></li>
+				        <li><a class="head" href="arvr.html">AR &amp; VR</a></li>
+			      	</ul>
+
+		    <!-- menu-submenu accordon-content-->
+			     	<li id="nav2" class="toggle accordion-toggle"> 
+			        	<span class="icon-plus"></span>
+			        	<a class="menu-link" href="#">Workshops</a>
+				    </li>
+				    <ul class="menu-submenu accordion-content">
+				    	<li><a class="head" href="arduino.html">Arduino</a></li>
+				    	<li><a class="head" href="vr.html">VR environments</a></li>
+				    	<li><a class="head" href="computervision.html">Computer Vision</a></li>
+				    </ul>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav3" class="toggle"> 
+				         <a class="menu-link" href="excursions.html">Excursion</a>
+				    </li>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav4" class="toggle"> 
+				         <a class="menu-link" href="labweeks.html">Lab weeks</a>
+				    </li>
+
+		   		</ul>
+		</div>
+		</header>
+		<main>
+			<article id="article1">
+			<h1>HCI Labweeks</h1>
+			<p>In these two weeks I worked together with my group on our interactive concept in Maakhaven. After those weeks building an interactive installation, we presented it in an exhibition.</p>
+			<h4>Process</h4>
+			<p id="info">Click on a day to see more information.</p>
+				<div class="days"><h2>Day 1: The Startup</h2></div>
+				<div class="explanation">
+					<p>On the first day, we got introduced to the Lab weeks and got to know more about what we will do. Then we split up into our assigned groups and got to know each other and the specific topic that we were working with.</p>
+					<h4>Wearables!</h4>
+					<p>That’s the topic I did get with my four groupmates. 
+					What do we do now? Is what we thought. We were supposed to work based on the scrum method. So, we’ve made a scrum board and asked ourselves what we need to do for day one. We decided to do some brainstorming and mind mapping to come up with an idea to make. We talked about the topic wearables, so what reasons are there, what wearables exist, where can they be used for and on what areas. We talked about our hobbies, experiences with wearables and problems we have on the daily life what we maybe can use. </p>
+					<p>We researched what elements we needed if we wanted the idea to come alive. We found out that we needed, for a basic first prototype, an Arduino board, and some sort of Vibration sensor. We got those from our lecturers and started to solder one of the vibration sensors to cables of the Arduino board, so we could later on connect them with the board and therefore the code. After the soldering, we connected it to the board and with the help of some YouTube videos, Alec started coding. But even after trying multiple times, it still wouldn’t work, and we didn’t know why, so we decided to try it with another sensor, which wasn’t soldered and connected it through some jumper cables. To our excitement, this worked and we were very surprised by the strength of the vibration. Since we only had three sensors, one of which with only one cable, we decided to try the soldered one again, by removing it from the Arduino cables. Unfortunately, it still didn’t work, which for us meant that we had to order some ourselves online, to get them the following day. By the end of the day, we had ordered the sensors from TinyTronics, and sat together for a small discussion on what our next steps would be. We decided that we still had to buy some slippers, test all the motors/sensors and get the motors to be controlled by code (change its behaviour). We also needed to ask ourselves the question of how we wanted the product design to be. We ended the meeting with one of the lecturers summing up the day and telling us what we can expect from tomorrow.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day1/brainstorm.jpeg" alt="Image of Brainstormsessions" id="afbeeldingen" class="afbeeldingen"><figcaption>Brainstorming about the topic</figcaption></figure>
+					<figure><img src="styles/day1/groupbrainstorm.jpeg" alt="Image of Group brainstorming" id="afbeeldingen" class="afbeeldingen"><figcaption>Working on it</figcaption></figure>
+					</div>
+					<p>We chose the subjects music and festivals, because we all have a connection with this and is fun for everyone. After going deeper on the both topics, we thought about different inputs and outputs and what people can do with it. Finally, we came up with the idea to track the rhythm of a song someone plays on their phone/laptop or another device with Wi-Fi and give impulses by vibrations in someone’s shoes e.g. insoles. In that case people can wear this in festivals, concerts, parties but also at home. Users can feel the rhythm and it gives them an extra dimension.</p>
+					<p>To make the vibration work, we had to solder a larger cable as an extension for testing and for connecting it to the Arduino board. The vibration motor can have a maximum of 3 volt and the cables had to be plugged into the ground and one in 3,5. Instead of using digitalWrite in the code we used analogWrite, so that we didn’t had to use the Arduino board but just doing it analogue. The first motor we had just didn’t work what took us some time. We think it was broken because of the soldering. Another one worked with jumper cables. The code we’ve used didn’t influence the vibration. For testing and our end product we need more vibration motors so people can feel it in their whole foot/feet, which we ordered at tiny tronics. </p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day1/solder2.jpeg" alt="Image of soldering" id="afbeeldingen" class="afbeeldingen"><figcaption>Soldering the vibration motors</figcaption></figure>
+					<figure><video width="275" height="190" controls>
+					  <source src="styles/day1/soldervideo.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video></figure>
+					</div>
+					<div class="afbeeldingen">
+					<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/_mtshOqPlOY" frameborder="0" allowfullscreen></iframe><figcaption>Video by Jeroen</figcaption></a></figure>
+					<figure><img src="styles/day1/arduinofirsttry.jpeg" alt="Image of Arduino with vibration motors" id="afbeeldingen" class="afbeeldingen"><figcaption>The vibration motor in the Arduino board</figcaption></figure>
+					</div>
+				</div>
+
+				<div class="days"><h2>Day 2: An efficient day</h2></div>
+				<div class="explanation">
+					<p>At first we did a daily standup. We said what we did yesterday and what our goals were for today. It all was still a bit general. We started cutting three circles in the slippers so the motors can be placed into them. The places we cutted out, are the points where the feet pressure is the highest. The users will feel it there the most and will get the best sensation out of it.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day2/slippersdots.jpeg" alt="Image of slippers with dots" id="afbeeldingen" class="afbeeldingen"><figcaption>Slippers with the dots for the motors</figcaption></figure>
+					<figure><img src="styles/day2/slippermotorhole.jpeg" alt="Image of slippers with holes" id="afbeeldingen" class="afbeeldingen"><figcaption>Vibration motor in the hole</figcaption></figure>
+					</div>
+					<p>We let the Arduino code work with the vibration motor. The motor works by using a potmeter and it now vibrates with BPM.
+					</p>
+					<div class="afbeeldingen">
+					<figure><video width="275" height="190" controls>
+					  <source src="styles/day2/videovibtrationworks.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video><figcaption>Working vibration motor</figcaption></figure>
+					<figure><video width="275" height="190" controls>
+					  <source src="styles/day2/videomovingwheel.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video><figcaption>Working with BPM</figcaption></figure>
+					</div>
+					<p>To connect the vibration with a music song we need a wifiboard. But this board isn’t working with the code yet.</p>
+					<p>All the vibration motors came in by post so we now had a total of 10 (we needed 8 but always be sure and order some more). We’ve soldered almost all the wires to the motors.</p>
+					<p>Between working on our project there was a guest lecture to provide us from information about projects he did. His name was Vincent and he is the owner of Next Empire: <a>https://nextempire.net/</a>. This company is a product / experience studio with a new purpose whom works for e.g. PostNL and Efteling. They’ve made a 3d sound system with storytelling entertainment for Artis where people gets to hear a story about a ghost which have murdered people and animals. For KPN they created an Augmented Reality installation called You &amp;_AI. Through a playful interaction people can experience the transformation of how people will live and work in the near future. The guest speaker surprised me with the cool projects they’ve made and gave me motivation to build something really nice as well.</p>
+					<div class="afbeeldingen">
+					<figure><video width="275" height="257" controls>
+					  <source src="styles/day2/videoworkingwithwifiboardonly.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video><figcaption>Vibrating motors on WiFi board</figcaption></figure>
+					<figure><img src="styles/day2/guestlecture1.jpeg" alt="Image of the guest lecture" id="afbeeldingen" class="afbeeldingen"><figcaption>Guest lecture</figcaption></figure>
+					</div>
+				</div>
+
+				<div class="days"><h2>Day 3: Being productive</h2></div>
+				<div class="explanation">
+					<p>We started the day again with daily standup. I’ve told I would like to do the soldering of the motors to the cables, designing the logo and cutting out the last holes. We also decided to brainstorm together about the productname and we came up at the end with: FlipHop, because the combination of Flipflop and Hiphop, what has to do with music and hop is also like hopping to a different place with the slippers. The other groupmates will figure out how they can plug three motors into one pin.</p>
+					<p>In the beginning of the day we’ve had a guest lecture from Dr. Lr. Joost Broekens. He was a teacher and researcher at an university. The whole presentation was about robotica, which we couldn’t really use for our project. But still I have seen some interesting things, for example a (digital) mouse that learns action preferences, so it knows where the food is and that he needs that and knows that it can’t go through the lava. It makes use of the technology reinforcement learning, it learns a lot of trials.
+					</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day3/cuttingoutholes.jpeg" alt="Cutting holes" height="205" id="afbeeldingen" class="afbeeldingen"><figcaption>Cutting out the last holes</figcaption></figure>
+					<figure><img src="styles/day3/guestlecture2.jpg" alt="Guest lecture Broekens" id="afbeeldingen" class="afbeeldingen"><figcaption>Guest lecture of Joost Broekens</figcaption></figure>
+					</div>
+					<p>We found out other groups all used lights and another group had the same ideas as us. To be original, we decided to change our product. We’ve had a brainstorm session to come up with new ideas and we decided to not work with lights, because almost all the wearable groups were working with it. The ideas we had were:
+					-	Instead of ledlights around the sole or on the band we can use lasers or other lights
+					-	A GPS in it with also an installation which tells you what way you need to go to get to the place you want to be
+					-	A steptracker which tracks the amount of dancepasses you’ve made.
+					</p>
+					<p>After the guest lecture we worked on the motors and the logo. We thought it is a good idea to make different logos and combinate as far as it can. The slipper you can see in the final logo had three different colours, and the colours are shown on the places where the vibration motors can be found.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day3/scetcheslogo.jpeg" alt="Scetches logo" id="poster" class="afbeeldingen"><figcaption>Scetches of logo</figcaption></figure><br />
+					<figure><img src="styles/day3/logo1.jpeg" alt="First logo" id="poster" class="afbeeldingen"><figcaption>First logo I've made</figcaption></figure><br />
+					<figure><img src="styles/day3/logoprocess.jpeg" alt="Logo process" id="poster" class="afbeeldingen"><figcaption>Process of the logo</figcaption></figure>
+					</div>
+					<p>During working on the vibration motors (three in one) we found out there was not enough volt what the Arduino board can handle. The Arduino board can handle five volts in total, but each motor needs three. So, we bought a battery with nine volt. The problem is solved, and it worked.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day3/implementationboard.jpeg" alt="Arduino with battery" id="afbeeldingen" height="205" class="afbeeldingen"><figcaption>Arduino with battery</figcaption></figure>
+					<figure><video width="275" height="257" controls>
+					  <source src="styles/day3/usingthreemotors.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video><figcaption>Vibration by using the battery</figcaption></figure>
+					</div>
+					<p>Later on we heard that the vibration motors works as a kind of dynamo and leads energy, even when we put them off they turn further. That’s why the stream of energy goes against the direction of the normal circuit and is harmful for the Arduino Board. With a diode the stream will just go one way, in that way it will only go to the ground and not back into the Arduino board. We needed also a transistor which can be used as a sort of switch and it works on volts. If a high voltage comes in, it will go open and when the voltage goes down it will close. Another new material we will use is a capacitor that works like a buffer for the energy. </p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day3/tellingaboutbetterwaysarduino.jpeg" alt="Mentor explains about another circuit" id="afbeeldingen" class="afbeeldingen"><figcaption>Mentor explains about another circuit</figcaption></figure>
+					<figure><img src="styles/day3/workingonthethreemotors.jpeg" alt="Working on the circuit" id="afbeeldingen" height="155" class="afbeeldingen"><figcaption>Working on the circuit</figcaption></figure>
+					</div>
+				</div>
+
+				<div class="days"><h2>Day 4: More brainstorming</h2></div>
+				<div class="explanation">
+					<p>The daily start-up just goes by every day and the updates and what we need to do and all will be there in my process. So at this point I will stop saying about what we’ve talked about in the daily startup, but we just do it every day.</p>
+					<p>We started the day with a presentation of Teun Verkerk who creates electronic lifeforms and media in public spaces. He thinks about new ways of communication by mixing tangible with digital using compemporary shapes and techniques. This wasn't really interesting for me, I thought it was not really usefull what projects he made.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day4/guestlecture3.jpg" alt="Guest lecture Verkerk" id="poster" class="afbeeldingen"><figcaption>Guest lecture Teun Verkerk</figcaption></figure>
+					</div>
+					<p>We had to decide which features we wanted to put in. So we first had a brainstorm session for this. You can find the picture below. We decided to make connected flipflops with your friend, and when you don’t know what the location is of your friend, you can use the slippers to get closer to him. It is like the warmer/colder game. The flipflops let you know when you are getting closer to your friend. We will add lights to the bands of the slippers to show this, but also the motors will vibrate stronger/more when you get closer.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day4/features.jpg" alt="Features" id="afbeeldingen" class="afbeeldingen"><figcaption>More features</figcaption></figure>
+					<figure><img src="styles/day4/problems.jpg" alt="Problems we can get" id="afbeeldingen" class="afbeeldingen"><figcaption>Problems we can get</figcaption></figure>
+					</div>
+					<p>I thought that it also would be nice to make a visualisation in 3d (by sketches it and not actually printing it) of the flipflops to have a better vision of it and to show in at the expo.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day4/beginningposter.jpeg" alt="beginning poster" id="poster" class="afbeeldingen"><figcaption>Beginning poster</figcaption></figure>
+					</div>
+					<p>We've made the new circuit to work with the new transistor and capacitor. To make the circuit better, we have to use the wifiboard. We also needed to test the slippers if the vibration was good enough. We've made the conclusion that we did feel the vibration, but not really strong. We want to change that by using another transistor.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day4/newcircuit.jpg" alt="Features" id="afbeeldingen" class="afbeeldingen"><figcaption>The new circuit</figcaption></figure>
+					<figure><iframe width="300" height="450" src="https://www.youtube.com/embed/s0QEw3vAJNo" frameborder="0" allowfullscreen></iframe></figure>
+					</div>
+				</div>
+
+				<div class="days"><h2>Day 5: Make it light up</h2></div>
+				<div class="explanation">
+					<p>We began with the last guest lecture of those weeks. Marcello gave us some information about playful interactions. His presentation was a surprise, he did an interactive presentation by asking questions to the public. Unfortunately, it was the last presentation and we realised no one showed up with the topic wearables.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day5/guestlecture4.jpg" alt="guest lecture of Marcello" id="afbeeldingen" class="afbeeldingen"><figcaption>Guest lecture of Marcello</figcaption></figure>
+					<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/iF5Nl8GnfKw" frameborder="0" allowfullscreen></iframe><figcaption>Daily stand-up Update</figcaption></figure>
+					</div>
+					<p>To go further with our project, we had to buy a colour led strip and two Bluetooth sensors. The colour led strip functionate as an output to show the user that he is nearby his friend. Our idea is that the colours will blink faster when you are nearby the user, so the real party is on! And when you are further away from your friend the lights will still blink, but a bit slower. The vibration motors also respond on the distance between you and your friend, then you don’t have to look down all the time. By pressing a button you can put this function off, so your feet don’t vibrate all the time (or you have to like this; then you can order your slippers with us with all-time vibration ;) ). Me and Sophia started with a circuit for the led lights and stripping it, because we don’t use the additional USB connection.</p>
+					<div class="afbeeldingen">
+						<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/g5bnO_hO7k0" frameborder="0" allowfullscreen></iframe></figure>
+						<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/4AnMBrTGBM0" frameborder="0" allowfullscreen></iframe></figure>
+					</div>
+					<p>Daniel and Alec worked with the two Bluetooth sensors. We wanted to see the values between two objects, so we can implement that in the different pair of slippers. By the end of the day, a Bluetooth sensor worked with a connection with my Iphone and you can see how long the distance is between them. Here is a video working with the Bluetooth sensors:</p>
+					<div class="afbeeldingen">
+					<figure><video width="275" height="257" controls>
+					  <source src="styles/day5/valuesbluetooth.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video><figcaption>Bluetooth values</figcaption></figure>
+					<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/IgziGkWQAhs" frameborder="0" allowfullscreen></iframe><figcaption>Video uploaded by Daniël, made by me.</figcaption></figure>
+					</div>
+					<p>During this day we also went to the thrift shop, where we wanted to buy a mannequin what will be ‘the friend’ on the expo. Unfortunately was the price too high as the opinion was inside the group and the questioning about how much we need it, we didn’t buy it. We wanted to have a group mentality and buy everything together if we are going to use it. Next time we would like to hear it immediately if someone don’t want something so we can figure it out. We decided as a group to let each other know the next time. We’ve tried to think about alternatives, such as paper mâché, using a real person or drawing a person. But with them all there were too many disadvantages (money, time etc.), we have to brainstorm more about this.</p>
+					<p>We’ve made a good progress today and hope we will make some big steps coming days, because we only have three days before it needs to be finished.</p>
+				</div>
+
+				<div class="days"><h2>Day 6: It's time for fun</h2></div>
+				<div class="explanation">
+					<p>We first went to the shops and searched online where we bought:
+					-	Slippers with one band so we can implement the bluetooth board etc. better
+					-	A blow-up doll for expo presentation
+					-	Coloured tape for expo presentation
+					-	Festive/party things for expo presentation
+					The distance affects the vibration intensity now. Sophia and I made the music sensor work. You can see that in the video below. At the end of the day we’ve decided to first focus on the part of ‘find your friend’s’ with lights and vibration and let go of the idea of feeling the music through it. We first have to make one of these work into the details before starting with something else, it is important to have one thing work.</p>
+					<p>
+					<div class="afbeeldingen">
+					<figure><video width="275" height="257" controls>
+					  <source src="styles/day6/sounds.mp4" type="video/mp4">
+					  <source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+					</video><figcaption>Sound detector</figcaption></figure>
+					</div>
+					</p>
+					<p>I've made a map for the expo to know what we need and what the set-up is. At home I’ve made the (fun) presentation poster, because I have the most inspiration and creativity when I’m at home.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day6/map.png" alt="Map for expo" id="poster" class="afbeeldingen"><figcaption>Map for Expo</figcaption></figure><br />
+					<figure><img src="styles/day6/poster.png" alt="Poster presentation" id="poster" class="afbeeldingen"><figcaption>Poster</figcaption></figure><br />
+					<figure><img src="styles/day6/logo.jpeg" alt="logo" id="poster" class="afbeeldingen"><figcaption>Final Logo</figcaption></figure>
+					</div>
+				</div>
+
+				<div class="days"><h2>Day 7: Last things... I thought</h2></div>
+				<div class="explanation">
+					<p>I soldered this morning a lot with Daniël. Alec have made the Bluetooth board work with the distance en the code running on the laptop without having a connection with the laptop. It uses the bluetooth of a phone.
+					Jeroen tried to make the visualisation of the slippers and we together made an informative presentation poster. We also had to cut the holes for the wires. Sophia thought about the presentation for the expo.</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day7/posterinformative.jpeg" alt="Poster presentation" id="poster" class="afbeeldingen"><figcaption>Informative poster</figcaption></figure>
+					</div>
+					<p>We also needed to add MOSFETS in our circuit in order to work with the RGB in the LED lights. We also made the vibration motors work with distance, see the video below.
+					<div class="afbeeldingen">
+					<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/jLswPDu7Su8" frameborder="0" allowfullscreen></iframe><figcaption>Video uploaded by Daniël, made by me.</figcaption></figure>
+					</div>
+				</div>
+
+				<div class="days"><h2>Day 8: Only one day before the Expo!</h2></div>
+				<div class="explanation">
+					<p>Started the day with soldering all the wires with Daniel. Alec kept going on with the Bluetooth board, which resulted to a working Bluetooth board and working with the code. It remembers what the board needs to do; make the vibration motor work and reacts to the amount of distance there is inbetween. Only the vibration is a bit weak, we are trying to make that stronger.
+					Turn on at 10k voltage, it isn’t really high restitant and the resistors we have.
+					We now included the lightning into the circuit of the Bluetooth connection. When someone is going further away, then the lights are dimming. It is not going fluently yet.
+					</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day8/circuit3.jpg" alt="Circuit Bluetooth board" id="poster" class="afbeeldingen"><figcaption>Circuit Bluetooth board</figcaption></figure><br />
+					<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/cWBlSwu8sdk" frameborder="0" allowfullscreen></iframe></figure>
+					<figure><iframe width="300" height="208" src="https://www.youtube.com/embed/kmC8G_AfP_s" frameborder="0" allowfullscreen></iframe></figure>
+					</div>
+				</div>
+
+				<div class="days"><h2>Day 9: LAST DAY</h2></div>
+				<div class="explanation">
+					<p>The last day was so stressfull! The portable chargers didn't work with the arduino board because of a safety lock. We had to buy last-minute two special Arduino batteries and gladly they did work. But then we had to do the soldering very quick. </p>
+					<p>
+					Everyone did bring some festival stuff to hang on during the Expo, for the real party/summer vibes. The slippers didn't look as good as I wanted, but they worked till the end and that is what matters.
+					</p>
+					<div class="afbeeldingen">
+					<figure><img src="styles/day9/lastwords.jpg" alt="last words from Chris" id="poster" class="afbeeldingen"><figcaption>Chris said for the last time: 'Hebben we er zin in?!'</figcaption></figure><br />
+					<figure><img src="styles/day9/circuit.jpeg" alt="circuit final" id="poster" class="afbeeldingen"><figcaption>Blueprint circuit</figcaption></figure><br />
+					<figure><img src="styles/day9/finalslippers.jpeg" alt="final slippers" id="poster" class="afbeeldingen"><figcaption>Final slippers</figcaption></figure><br />
+					<figure><img src="styles/day9/expo.jpeg" alt="expo" id="poster" class="afbeeldingen"><figcaption>Expo/presentation looks (picture by Daniël)</figcaption></figure>
+					</div>
+					<div id="line"></div>
+				</div>
+
+				<h4>Our product: Fliphop</h4>
+				<p>Our concept revolves around the feel-good festival experience. In order for you to share those amazing memories with your friends, the slippers will help you to never lose them completely.  The idea is to bring people together with a proximity device that vibrates stronger or softer depending on the distance between you and your friend. The LED lights and vibration motors will tell you how far away you are from your friends.
+				</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/day7/posterinformative.jpeg" alt="Poster presentation" id="poster" class="afbeeldingen"></figure>
+					</div><br />
+				<p>The flip flops are equipped with LED lights, vibrating motors and a location based system. The two available settings are “find my friends” or simply “off”. We use a Bluetooth board as the location based system, this will help you to find out how close you are to your friend, by indicating the proximity through LED lights and the frequency of vibrating sensors. The vibrating motors will help to determine the location by vibrating faster without having to look down, while the LED lights will flash faster if you get closer. For a real final product, we want to recplace the Bluetooth board for a WIFI board for a greater distance and make the design without seeing all the technical stuff.</p>
+
+				<div class="afbeeldingen">
+					<iframe width="585" height="800" src="https://www.youtube.com/embed/zIbU5vLZXwI" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<h4>Reflection</h4>
+				<p>
+				During the course before the lab weeks, I made up some goals and expectations about the lab weeks which you road on my homepage, did I achieve these yes or no?</p><br />
+
+				<p id="quote">“I expect the two working weeks will be very intense and maybe my brain will explode afterwards, but I think it will be worth it.”</p>
+
+				<p>This was true, it was very intense but I loved to see the results and the progress we made in such a fast time. I think this scrum technique is an amazing way to get results real fast without making the actual prototype. My brain is full now of new technical possibilities and solutions and working techniques.</p><br />
+
+				<p id="quote">“I hope to let my creative mind work, combined with the inspiration that technology offers within this project to come up with an interactive concept. I will create a detailed concept for a valuable, innovative interaction.”</p>
+
+				<p>I loved that I could put my creativity in this project and use it. The skills and technology limited a little, we had big ideas which we needed to shrink a little.
+				We can say here that I accomplished those goals and expectations, now let’s talk more about my experiences and difficult situations during those two weeks.</p><br />
+
+				<p>One of the best things is that I worked in an international team (with a German girl and a Canadian guy). Not only was this my chance to improve my English in this field of expertise, but I also get to know how people from other countries work. This was a good opportunity to prepare myself for my exchange starting from August 2019.</p><br />
+
+				<p>Something I struggled with, was my skillset. We couldn’t make some things true, because we didn’t know how to do it. I am talking about the technical part, e.g. working with Arduino. And of course, this isn’t a problem and we learned some helpful things among the way, but we needed to do this in such a short time and for those things you really need to sit down and take your time. But when we accomplished an obstacle, it was an amazing feeling. I was for example super happy when I made the LED lights work. I am not a pro in Arduino, but wherever I could, I tried to help. And when you see then the right result is just great.</p><br />
+
+				<p>One thing I recognized I do more often, is I ask in projects: ‘where is everyone/you working on?’. I think I do it to have a certain control on the project and keep an eye on the process that’s made. I don’t think it’s a bad thing, because when we were doing the daily stand-up every day, I could say what we all did and what we should do.</p><br />
+
+				<p>We had to create choices at the beginning (diverge) and through the process we made choices (converge). Sometimes I felt disappointed about us not accomplishing the ideas what we had in mind, that we had to make sacrifices. But we did set up real big goals and we couldn’t prevent this to happen. And sometimes the ideas we had in the beginning, other groups had it too. But we wanted to be original and then we changed it a little bit. For example, we wanted to learn people how to stick with the rhythm on festivals, but when we heard another group working with BPM and rhythm things, we directly stopped with working it out. Maybe next time I want to think again and I think now that it isn’t about originality but what you make out of it.</p><br />
+
+				<p>The next time I will test as much (or more if possible) as we did. We tested the lo-fi prototype quite early. In this case there was possibility to fail quickly, iterate and test again. This process we did a couple of times within our group, but also with outside test people.</p><br />
+
+				<p>If I look back, I am amazed what we accomplished in only two weeks. I was motivated and had a drive during the weeks, pretty consistent with some downs during making sacrifices. We came up with a pretty good idea which I see happening in the far future. I am content with it and maybe we can't check everything we had in mind, it still is amazing what it can do. Next time I want to make a better-looking prototype, to make it look more real for people, although at the exposition people already liked it. The slippers weren't really comfortable with all the wires going everywhere.</p>
+			</article>
+		</main>
+		<footer><p>© 2019 Elvira Vriesema</p></footer>
+		<script src="main.js"></script>
+	</body>
+</html>

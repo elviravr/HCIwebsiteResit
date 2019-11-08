@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio Project G</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+		<a href="index.html"><img src="styles/logo.png" id="logo"></a>
+			<div id="menu-container">
+		  		<div id="menu-wrapper">
+		      		<div id="hamburger-menu"><span></span><span></span><span></span></div><span></span>
+		    <!-- hamburger-menu -->
+		   		</div>
+
+		   	<!-- menu-wrapper -->
+		   		<ul class="menu-list accordion">
+		   			<li id="nav0" class="toggle"> 
+				         <a class="menu-link" href="index.html">Home</a>
+				    </li>
+		      		<li id="nav1" class="toggle accordion-toggle"> 
+		         		<span class="icon-plus"></span>
+		         		<a class="menu-link" href="#">Topics</a>
+		      		</li>
+		    <!-- menu-submenu accordon-content-->
+			      	<ul class="menu-submenu accordion-content">
+				        <li><a class="head" href="wearables.html">Wearables</a></li>
+				        <li><a class="head" href="playfulinteractions.html">Playful Interactions</a></li>
+				        <li><a class="head" href="artificialcreatures.html">Artificial Creatures</a></li>
+				        <li><a class="head" href="arvr.html">AR &amp; VR</a></li>
+			      	</ul>
+
+		    <!-- menu-submenu accordon-content-->
+			     	<li id="nav2" class="toggle accordion-toggle"> 
+			        	<span class="icon-plus"></span>
+			        	<a class="menu-link" href="#">Workshops</a>
+				    </li>
+				    <ul class="menu-submenu accordion-content">
+				    	<li><a class="head" href="arduino.html">Arduino</a></li>
+				    	<li><a class="head" href="vr.html">VR environments</a></li>
+				    	<li><a class="head" href="computervision.html">Computer Vision</a></li>
+				    </ul>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav3" class="toggle"> 
+				         <a class="menu-link" href="excursions.html">Excursion</a>
+				    </li>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav4" class="toggle"> 
+				         <a class="menu-link" href="labweeks.html">Lab weeks</a>
+				    </li>
+
+		   		</ul>
+		</div>
+		</header>
+		<main>
+			<!-- <img class="selfie" src="styles/elvira.jpg" alt="Picture of Elvira"></img> -->
+			<article id="article1">
+				<h1 class="greet">Playful Interactions.</h1>
+				<p>Most interfaces are individual, say a laptop where you need a mouse and screen. Playful interfaces are interactive with surroundings and you can play with it together. The interfaces make use of input technology: Computer vision and sensors and output technology: Sight, touch, hear, smell and taste. For example there are piano stairs to motivate people to use the stairs instead of the elevator / escalators and motivate more people to throw rubbish in the bin by making it fun and playfull.</p>
+				<div class="afbeeldingen">
+					<figure><iframe  height="300" src="https://www.youtube.com/embed/2lXh2n0aPyw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>Piano stairs</figcaption></figure>
+					<figure><iframe  height="300" src="https://www.youtube.com/embed/qRgWttqFKu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>The world's deepest bin</figcaption></figure>
+				</div>
+			</article>
+			<article id="article2">
+				<h2>My idea</h2>
+				<p id="introduction">
+					The chairs in the rooms of school have <strong>build-in sensors</strong> which detects if someone’s sitting on the chair or not. In the room near the projector the teacher fills in the amount of student she expects to be present in that class. Both of these inputs are the technologies behind this idea. 
+				</p>
+				<h3>How it works</h3><p>
+					When someone is sitting down, there will be a <strong>cool, short sound</strong>. If there are only five students to go, there will be a count-down. And finally when the amount of students the teacher filled in is achieved, there will be <strong>played a song</strong> (e.g. one minute of the favourite song of the teacher) and the lesson can start. 
+					For every student that is on time, the group will get two points. When someone is too late, it will cost three points. When a person is still missing while the lesson has started and doensn’t come (and haven’t inform the teacher), then the total will be minus five per student.
+				<h3>How they can win</h3><p>
+					To know if the students will get a price, the next formula have to be calculated: [total points collected by the group of students for all the lessons of the whole period : amount of students x 100%], and when they have reached above 95%; the students <strong>win a studytrip</strong> of their choice in the Netherlands. The teachers will keep the score.
+				</p>
+				<h3>Gameplay</h3>
+				<p>
+					This is a <strong>multiplayer</strong> game and is <strong>cooperative</strong>. Everybody will be stimulated to be there on time, so it has benefits for the teacher as well for the students. The gameplay is <strong>knowing</strong> and <strong>comparing</strong>, because the players are aware of each others actions and will compare themselves to other students or classes.
+				</p>
+			</article>
+			<article id="article3">
+				<h2>Research</h2>
+				<h3><strong>Project Gravity Ball</strong></h3>
+				<p id="introduction">Project Gravity Ball is an interactive multiplayer game where players need to <strong>balance</strong> a physical platform to control a ball. The prototype uses <strong>camera tracking</strong> to register the movement of the ball and triggers the top-down projection onto the platform surface.</p>
+				<h3>Purpose of the interface</h3>
+				<p>
+					Trying to get the ball in as many energy fields as possible before the time runs out. 
+				</p>
+				<h3>Technology</h3>
+				<p>
+					Input technology:
+					Camera tracking to register the movement of the ball.
+					<br />
+					Output technology:
+					Triggers the top-down projection onto the platform surface.
+
+				</p>
+				<h3>Type of playmodus</h3>
+				<p>
+					Multiplayer, cooperative and parallel knowing.
+				</p>
+
+				<h3><strong>Breakout for Two</strong></h3>
+				<p id="introduction">Breakout for two is a cross between soccer, tennis, and the popular computer game "Breakout", which can be played by two players <strong>over a distance</strong>. It is a extertion interface.</p>
+				<h3>Purpose of the interface</h3>
+				<p>
+					Trying to get rid of the semi-transparent blocks in the game just like you do with the arcade game Breakout to win. The users will be active <strong>physically</strong> by throwing or kicking the ball on the blocks to break them, but also have <strong>social interaction</strong> with strangers or friends.
+				</p>
+				<h3>Technology</h3>
+				<p>
+					Input technology:
+					Camera tracking to register the movement of the ball.
+					<br />
+					Output technology:
+					The life-size projection of the remote player and the speakers.
+				</p>
+				<h3>Type of playmodus</h3>
+				<p>
+					Multiplayer, cooperative and parallel knowing.
+				</p>
+				<div class="afbeeldingen">
+					<figure><iframe src="https://player.vimeo.com/video/326329329" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+					<figcaption>Project Gravity Ball</figcaption></figure>
+					<figure><iframe src="https://www.youtube.com/embed/Z8cASgpFQgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>Breakout for Two</figcaption></figure>
+				</div>
+			</article>
+			<article id="article4">
+				<h2>Reflection</h2>
+				<p id="introduction">This topic in my opinion is very interesting. It isn’t used as much in real life as I’d like to be, but hopefully some of me and my fellow students can change this in the future! It will help to stimulate people with positive behavior in a fun way.</p>
+				<h3>Prediction future</h3><p>
+					I think in the near future this sort of technology will be used more, especially for children in an educational way. They love to play around and adults do respond to this cool technologies, but not as much as kids do. Maybe in the far future adults will use it more than it should be.</p>
+				<h3>Did the subject meet my expectations?</h3><p>
+					Well, I thought the technologies were more advanced than it is now, so that's not very positive. I think because people see it as a not necessary thing, but it is a great way to motvate everyone in a fun way.</p> 
+			</article>
+		</main>
+		<footer><p>© 2019 Elvira Vriesema</p></footer>
+		<script src="main.js"></script>
+	</body>
+</html>

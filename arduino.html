@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio Project G</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+		<a href="index.html"><img src="styles/logo.png" id="logo"></a>
+			<div id="menu-container">
+		  		<div id="menu-wrapper">
+		      		<div id="hamburger-menu"><span></span><span></span><span></span></div><span></span>
+		    <!-- hamburger-menu -->
+		   		</div>
+
+		   	<!-- menu-wrapper -->
+		   		<ul class="menu-list accordion">
+		   			<li id="nav0" class="toggle"> 
+				         <a class="menu-link" href="index.html">Home</a>
+				    </li>
+		      		<li id="nav1" class="toggle accordion-toggle"> 
+		         		<span class="icon-plus"></span>
+		         		<a class="menu-link" href="#">Topics</a>
+		      		</li>
+		    <!-- menu-submenu accordon-content-->
+			      	<ul class="menu-submenu accordion-content">
+				        <li><a class="head" href="wearables.html">Wearables</a></li>
+				        <li><a class="head" href="playfulinteractions.html">Playful Interactions</a></li>
+				        <li><a class="head" href="artificialcreatures.html">Artificial Creatures</a></li>
+				        <li><a class="head" href="arvr.html">AR &amp; VR</a></li>
+			      	</ul>
+
+		    <!-- menu-submenu accordon-content-->
+			     	<li id="nav2" class="toggle accordion-toggle"> 
+			        	<span class="icon-plus"></span>
+			        	<a class="menu-link" href="#">Workshops</a>
+				    </li>
+				    <ul class="menu-submenu accordion-content">
+				    	<li><a class="head" href="arduino.html">Arduino</a></li>
+				    	<li><a class="head" href="vr.html">VR environments</a></li>
+				    	<li><a class="head" href="computervision.html">Computer Vision</a></li>
+				    </ul>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav3" class="toggle"> 
+				         <a class="menu-link" href="excursions.html">Excursion</a>
+				    </li>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav4" class="toggle"> 
+				         <a class="menu-link" href="labweeks.html">Lab weeks</a>
+				    </li>
+
+		   		</ul>
+		</div>
+		</header>
+		<main>
+			<!-- <img class="selfie" src="styles/elvira.jpg" alt="Picture of Elvira"></img> -->
+			<article id="article1">
+
+				<h1 class="greet">Arduino</h1>
+				<p>An Arduino is open-source electronic prototyping platform enabling users to create interactive electronic objects. We learned the basics of prototyping with an Arduino with multiple sensors, lights, resistors, wires and other small electronics. To see what I've learned during the workshops, scroll through the exercises.</p><br />
+				<h2>3c: Blink multiple leds</h2>
+				<p>The first exercise was about how to make a LED blink. Because this was not exciting enough, we extended the circuit with a second LED. The 2 LEDs needed to blink at the same time but one of the LEDs needed to blink twice as fast as the other. I used jumping wires, resistors and the LED's. Below you can find the results.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/3cBlinkLeds.png" alt="Exercise 3c Blinking Leds" id="poster" class="afbeeldingen"><figcaption>Exercise 3c Blinking Leds</figcaption></figure> <br />
+					<figure><iframe src="https://player.vimeo.com/video/371220024" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+					<figcaption>Project Gravity Ball</figcaption></figure>
+				</div><br />
+
+				<h2>4c: Fade LED - Analog output</h2>
+				<p>We can do more than just turn a LED on and off. We can also control the brightness of LEDs. With the analogWrite() function we can make the LEDs fade in and out. In this example the objective was to make one LED fade in while the one LED slowly fades out. The minimum of the brightness is 0 and the maximum 255. I used the same materials for this exercise as the previous one. The circuit is also almost exactly the same, the only difference is the placing of the jumping wires and the code. See the result below.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/4cFadeLeds.png" alt="Exercise 4c Fade Leds" id="poster" class="afbeeldingen"><figcaption>Exercise 4c Fade Leds</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371220848"  height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+					<figure><iframe src="https://player.vimeo.com/video/371220800"  height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>6c: Controlling a LED with a potmeter</h2>
+				<p>Another possibility to control the LEDs is with a potentiometer. This is a 'turning button' and by connecting it to the Arduino we can read its value. Then it's possible to use this value to control the LED. If I turned the potentiometer, then one LED should fade in and the other one fade out. In the code are some changes again, with the use of Serial.print and a map attribute and sensorValue to read the values.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/6cControllingLedPotmeter.png" alt="Exercise 6c Controlling Led with a Potmeter" id="poster" class="afbeeldingen"><figcaption>Exercise 6c Controlling LED with a potmeter</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371220879"  height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+					<figure><iframe src="https://player.vimeo.com/video/371220952" height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>7: Control the LED with light</h2>
+				<p>A Light-Dependent Resistor or LDR is a sensitive resistor that has its resistance depending on the amount of light it's relieving. Additionaly, I used again LEDs, resistors and jumping wires. By mapping the output of the LDR sensor, we can control the LED. To see how big the difference is between the dark and light, we opened the Serial Monitor. First the sensorValue must be read which passes the value and shows it in the Serial Monitor.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/7ControllingLedLight.png" alt="Exercise 7 Controlling Led with light" id="poster" class="afbeeldingen"><figcaption>Exercise 7 Controlling LED with light</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371221007"  height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+					<figure><iframe src="https://player.vimeo.com/video/371221024"  height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>8: Voltage Divider</h2>
+				<p>A Light-Dependent Resistor or LDR is a sensitive resistor that has its resistance depending on the amount of light it's relieving. Additionaly, I used again LEDs, resistors and jumping wires. By mapping the output of the LDR sensor, we can control the LED. To see how big the difference is between the dark and light, we opened the Serial Monitor. First the sensorValue must be read which passes the value and shows it in the Serial Monitor.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/8Voltage.png" alt="Exercise 8 Voltage Divider" id="poster" class="afbeeldingen"><figcaption>Exercise 8 Voltage Divider</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371221066" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>9b: Arduino and processing</h2>
+				<p>Another program called Processing is introduced to get the result for this exercise. I also used LDRs, resistors, LEDs and jumping wires. The result was a figure in Processing that changes the size when the amount of light changes through the LDRs. The more light, the bigger the figure and vice versa.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/9ArduinoProcessing.png" alt="Exercise 9 Arduino Processing" id="poster" class="afbeeldingen"><figcaption>Exercise 9b Arduino and processing</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371221098" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>10f: Buttons</h2>
+				<p>I created two interaction inputs by putting two buttons in my breadboard and connected them to Arduino. Besides those materials, I also used a LED, resistors and jumping wires. The task in this assignment was to only make the LED light up when only one button is pressed, but not when both buttons are pressed. The "if" statement tells when the LED needs to go on. With the "else if" statement the LED needs to be switched off when the "if" conditions aren't met.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/10fButtons.png" alt="Exercise 10f Buttons" id="poster" class="afbeeldingen"><figcaption>Exercise 10f Buttons</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371221153" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>11b: Servometer</h2>
+				<p>Servomotors are motors that turn to a precise position that are mostly used in remote controlled vehicles. Most servos can not rotate completely, usually they have a reach of 180 degreedes. We needed to change the code and let the servo dance. I used the servomotor and jumping wires. To complete this task, I setted different positions and used a for loop that iterated through positions. When I uploaded the code, the servo did his dance.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/11bServometer.png" alt="Exercise 11b Servometer" id="poster" class="afbeeldingen"><figcaption>Exercise 11b Servometer</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371221183" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>12b: Controlling the servo with inputs</h2>
+				<p>To practice more with the servometer, we combined it with buttons which controlled the servo. If you press the button, the servomotor needed to do something. One button is used to rotate the servo clockwise and the other button is to rotate the servo counterclockwise. 'Pos' in the code means the position of the servometer. The -- and ++ behind it, stands for the side where the servo needs to go to. Because there are more scenario's, I used an 'if' statement.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/12bControllingServo.png" alt="Exercise 12b Servo" id="poster" class="afbeeldingen"><figcaption>Exercise 12b Controlling Servo with inputs</figcaption></figure><br />
+					<figure><iframe src="https://player.vimeo.com/video/371221222" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+
+				<h2>13b: Sound</h2>
+				<p>Done with the servodances, now let's make music! With the buzzer connected to the Arduino and checking the frequencies, I was able to create tunes. I used a Piezo speaker, jumping wires and a resistor for this exercise. I wanted to create a nice little melody and here in the video you can find the result.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/Arduino/13bSound1.png" alt="Exercise 13b Sound" id="poster" class="afbeeldingen"></figure>
+					<br /><figure><img src="styles/Arduino/13bSound2.png" alt="Exercise 13b Sound" id="poster" class="afbeeldingen"></figure>
+					<br /><figure><img src="styles/Arduino/13bSound3.png" alt="Exercise 13b Sound" id="poster" class="afbeeldingen"></figure>
+					<br /><figure><img src="styles/Arduino/13bSound4.png" alt="Exercise 13b Sound" id="poster" class="afbeeldingen"></figure>
+					<br /><figure><img src="styles/Arduino/13bSound5.png" alt="Exercise 13b Sound" id="poster" class="afbeeldingen"></figure>
+					<br />
+					<figure><iframe src="https://player.vimeo.com/video/371221257" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+					</figure>
+				</div><br />
+			</article>
+		</main>
+		<footer><p>© 2019 Elvira Vriesema</p></footer>
+		<script src="main.js"></script>
+	</body>
+</html>

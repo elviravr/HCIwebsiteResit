@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio Project G</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+		<a href="index.html"><img src="styles/logo.png" id="logo"></a>
+			<div id="menu-container">
+		  		<div id="menu-wrapper">
+		      		<div id="hamburger-menu"><span></span><span></span><span></span></div><span></span>
+		    <!-- hamburger-menu -->
+		   		</div>
+
+		   	<!-- menu-wrapper -->
+		   		<ul class="menu-list accordion">
+		   			<li id="nav0" class="toggle"> 
+				         <a class="menu-link" href="index.html">Home</a>
+				    </li>
+		      		<li id="nav1" class="toggle accordion-toggle"> 
+		         		<span class="icon-plus"></span>
+		         		<a class="menu-link" href="#">Topics</a>
+		      		</li>
+		    <!-- menu-submenu accordon-content-->
+			      	<ul class="menu-submenu accordion-content">
+				        <li><a class="head" href="wearables.html">Wearables</a></li>
+				        <li><a class="head" href="playfulinteractions.html">Playful Interactions</a></li>
+				        <li><a class="head" href="artificialcreatures.html">Artificial Creatures</a></li>
+				        <li><a class="head" href="arvr.html">AR &amp; VR</a></li>
+			      	</ul>
+
+		    <!-- menu-submenu accordon-content-->
+			     	<li id="nav2" class="toggle accordion-toggle"> 
+			        	<span class="icon-plus"></span>
+			        	<a class="menu-link" href="#">Workshops</a>
+				    </li>
+				    <ul class="menu-submenu accordion-content">
+				    	<li><a class="head" href="arduino.html">Arduino</a></li>
+				    	<li><a class="head" href="vr.html">VR environments</a></li>
+				    	<li><a class="head" href="computervision.html">Computer Vision</a></li>
+				    </ul>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav3" class="toggle"> 
+				         <a class="menu-link" href="excursions.html">Excursion</a>
+				    </li>
+
+			<!-- menu-submenu accordon-content-->
+					<li id="nav4" class="toggle"> 
+				         <a class="menu-link" href="labweeks.html">Lab weeks</a>
+				    </li>
+
+		   		</ul>
+		</div>
+		</header>
+		<main>
+			<!-- <img class="selfie" src="styles/elvira.jpg" alt="Picture of Elvira"></img> -->
+			<article id="article1">
+				<h1 class="greet">VR Environments</h1>
+				<p>With Unreal Engine we builded environments and we learned how to work with the technique Projection Mapping by using Styrofoam.
+				Spatial Augmented Reality (aka Projection Mapping) uses everyday video projectors, but instead of projecting on a flat screen (e.g. to display a PowerPoint), light is mapped onto any surface, turning common objects of any 3D shape into interactive displays. It can be projected on really small or big surfaces and even can be interactive. The Unreal Engine Assignment consists of two parts. In the first part we learned to use materials, textures and movement to create a turning banana on a turntable in 3D. In the seconde one we created a small game where you can collect bananas as a red cube character.</p><br />
+				<h2>Unreal Engine Assigment</h2>
+				<h3>Banana turntable</h3>
+				<p>I learned how to style objects by creating materials and adding them to a specific object, in this case a banana. Then I had to create a blueprint for my banana. With a blueprint you can create a certain behavior for objects without having to code, such as galloping horse or a driving car. By adding a local rotation, an object can rotate. By linking this blueprint to the banana, the banana can rotate:</p>
+				<div class="afbeeldingen">
+					<figure><iframe height="365" src="https://www.youtube.com/embed/KWnwYMyVNwk" frameborder="0" allowfullscreen></iframe><figcaption>Rotating Banana</figcaption></figure>
+					</figure>
+				</div>
+				<h3>Eat bananas</h3>
+				<p>In this excercise I learned even more about blueprints in Unreal Engine. I've added bananas which the red cube can eat. I made this happening by using the 'DestroyActor', 'AddLocalRotation', 'Event Trick', 'Rotation Speed', 'Multiplication' and 'On Component Begin Overlap'. The red cube can not go through the walls.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/eatingbananas.png" alt="Eating Bananas" id="afbeeldingen" class="afbeeldingen"><figcaption>Eating bananas</figcaption></figure>
+				</div>
+				<br /><h2>Spatial Augmented Reality</h2>
+				<p>We learned to projection map images on Styrofoam using a projection mapping software called MadMapper. During the workshop the projectors were already connected to the PCs, so we could get started right away. Because there were only two projectors, we worked in groups with five people. To experiment with images and videos, we used a polystyrene ball on which we projected an image of the earth. Then we adjusted the opacity that was influenced by the height of the decibels of the sounds we played. We used a video of a rotating earth so it looked like it came alive and the earth was spinning in real life.</p>
+				<div class="afbeeldingen">
+					<figure><img src="styles/projectionmapping.jpg" alt="Projection mapping earth" id="afbeeldingen" class="afbeeldingen"><figcaption>Projection Mapping Earth Picture</figcaption></figure>
+					<figure><iframe width="300" height="299" src="https://www.youtube.com/embed/GHhwXBKQ3BA" frameborder="0" allowfullscreen></iframe><figcaption>Projection Mapping Earth Video</figcaption></figure>
+				</div><br /> 
+				</div>
+				<p>After the earth we wanted to work with faces. We first used a mannequin, where we projected a mask over the eyes. We also wanted to see how it will look like if we use another face on someone's face. Both examples you can see in the videos.</p>
+				<div class="afbeeldingen">
+				<figure><iframe title="vimeo-player" src="https://player.vimeo.com/video/339463959" width="300" height="1130" frameborder="0" allowfullscreen></iframe><figcaption>Video made by me, uploaded by Sophia</figcaption></figure>
+				<figure><iframe height="400" width="300" src="https://www.youtube.com/embed/nbTSpqaRr_g" frameborder="0" allowfullscreen></iframe><figcaption>Mannequin mask</figcaption></figure>
+				</div>
+			</article>
+		</main>
+		<footer><p>© 2019 Elvira Vriesema</p></footer>
+		<script src="main.js"></script>
+	</body>
+</html>
